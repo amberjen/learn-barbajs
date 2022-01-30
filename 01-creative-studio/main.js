@@ -17,7 +17,6 @@
 
       }
     ],
-    // debug: true,
     transitions: [{
       name: 'fade',
 
@@ -27,8 +26,6 @@
       leave: () => {},
 
       beforeEnter: ({ current, next, trigger }) => {
-
-        console.log('current', current);
 
         const navLinks = document.querySelectorAll('header nav a');
         const nextPage = next.url.path;
@@ -41,9 +38,8 @@
             link.classList.remove('active');
           }
 
-        })
-
-        
+        });
+ 
         window.scrollTo({
           top: 0,
           behavior: 'smooth'
