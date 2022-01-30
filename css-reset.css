@@ -1,0 +1,14 @@
+/* ------- Minimal Reset ------- */
+html, body, p, ol, ul, li, hr, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: 400; font-family: inherit; color: #343436; }
+ol, ul { list-style: none; }
+button, input, select, textarea { margin: 0; font: inherit; color: inherit; }
+button { background: none; border: none; padding: 0; cursor: pointer; }
+html { box-sizing: border-box; -ms-text-size-adjust:100%; -moz-text-size-adjust:100%; -webkit-text-size-adjust:100%;}
+*, *::before, *::after { box-sizing: inherit; }
+img, video { display: block; height: auto; max-width: 100%; }
+main, figure, figcaption { display:block }
+table { border-collapse: collapse; }
+td, th { padding: 0; text-align: left; font-weight: 400; }
+a { color: inherit; text-decoration: none; }  
+* { margin: 0; padding: 0; box-sizing: border-box; }
