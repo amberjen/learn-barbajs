@@ -1,0 +1,78 @@
+/* :root {
+
+} */
+
+body {
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  background: #111;
+}
+
+/* ------------------------------------- */
+/*                Header                 */
+/* ------------------------------------- */
+header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 24px 24px;
+  z-index: 99;
+}
+
+/* h1 { color: #fff; } */
+
+
+/* ------------------------------------- */
+/*                Main                 */
+/* ------------------------------------- */
+
+main {
+  position: relative;
+}
+
+.page-nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  transition: all .25s;
+}
+
+.nav-prev { left: 32px; }
+.nav-next { right: 32px; }
+
+.nav-prev:hover { left: 24px; }
+.nav-next:hover { right: 24px; }
+
+.photo-info {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 48px;
+  z-index: 99;
+  font-style: italic;
+}
+
+.photo-group { position: relative; }
+
+.photo-group .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .25);
+  z-index: 2;
+}
+
+.photo-group img {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  object-fit: cover;
+}
