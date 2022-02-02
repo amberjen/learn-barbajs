@@ -28,10 +28,9 @@
       beforeEnter: ({ current, next, trigger }) => {
 
         const navLinks = document.querySelectorAll('header nav a');
-        const nextPage = next.url.path;
+        const nextPage = (next.url.path).replace('/01-creative-studio', '.');
 
         navLinks.forEach(link => {
-          
           if(link.getAttribute('href') === nextPage) {
             link.classList.add('active');
           } else {
