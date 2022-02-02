@@ -16,3 +16,6 @@
 - GSAP
 - Plugin:
   - @barbar/prefetch
+
+## Credits
+- Images from [Unsplash](https://unsplash.com/)
